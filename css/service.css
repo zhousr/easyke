@@ -69,7 +69,7 @@
 
 .levelTwo-li.levelTwo-li-actived::before,
 .levelTwo-li-actived+.levelTwo-li::before {
-  width: 0px;
+  width: 0px!important;
 }
 
 .levelTwo-li-actived {
@@ -99,4 +99,67 @@
   font-family: PingFangSCRegular;
   font-size: 16px;
   color: #666666;
+}
+
+@media screen and (max-width: 768px) {
+  section{
+    min-height: calc(100vh - 207px - 42px - 123px + 20px);
+  }
+.levelOne-ul {
+  text-align: left;
+  width: 100%;
+  padding: 5px 6px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.levelOne-li{
+  float: left;
+  width:50%;
+  line-height: 2;
+  border-radius: 5px;
+  text-align: center;
+  }
+  .levelTwo{
+    margin: 10px 0;
+    text-align: left;
+  }
+  .levelTwo-li,.levelTwo-ul:nth-child(1) .levelTwo-li {
+    width: 50%;
+    height: auto;
+    min-height: 66px;
+    line-height: 66px;
+    padding: 0;
+    display: table;
+    float: left;
+    /* display: flex;
+    justify-content: center; */
+  }
+  .levelTwo .levelTwo-a{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .levelTwo .levelTwo-a p{
+    line-height: 1.4;
+  }
+  .levelTwo-titleTop{
+    display: inline;
+    text-align: left;
+    white-space:normal;
+  }
+  .levelTwo-li:not(:first-child)::before {
+    width: 0;
+  }
+  
+.levelTwo-li-actived::after {
+  bottom: -6px;
+  left: 50%;
+}
+  .levelTwo-li:nth-child(even)::before {
+    width: 2px;
+    top: 12px;
+  }
+  .service-desc-li{
+    padding: 0 6px;
+  }
 }

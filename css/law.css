@@ -1,8 +1,6 @@
-section {
-  padding: 40px 0;
-  background-color: #f2f2f2;
+section{
+  background-color: #f0f0f0;
 }
-
 .lawDtl {
   background-color: #fff;
 }
@@ -59,6 +57,7 @@ section {
 }
 .law-ul{
   margin-top: 40px;
+  display: none;
 }
 .law-li {
   float: left;
@@ -69,7 +68,7 @@ section {
 
 .law-li-imgBox,
 .law-li-img {
-  width: 300;
+  width: 300px;
   height: 220px;
 }
 
@@ -88,7 +87,6 @@ section {
   width: 100%;
   font-size: 16px;
   color: #666;
-  /* display: inline-block; */
   margin-bottom: 50px;
 }
 
@@ -105,4 +103,42 @@ section {
   background: #0095FF;
   border-radius: 2px;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .law-ul{
+    margin-top: 20px;
+  }  
+  .law-li {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .law-li .u-ells3 {
+  -webkit-line-clamp: 2;
+}
+  .law-li-imgBox,
+.law-li-img {
+  width: 43.2%;
+  height: auto;
+}
+.law-right {
+  width: 56%;
+  }
+  .law-li-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .law-li-desc{
+    margin-bottom: 10px;
+  }
+  .law-li-time {
+    font-size: 13px;
+    line-height: 30px;
+  }
+  .law-li-btn {
+    width: 80px;
+    line-height: 30px;
+    border-radius: 2px;
+  }
 }
