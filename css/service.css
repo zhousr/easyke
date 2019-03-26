@@ -1,0 +1,102 @@
+.levelOne {
+  vertical-align: top;
+  background-image: linear-gradient(0deg, #14CB85 0%, #11BCED 100%);
+  text-align: center;
+}
+
+.levelOne-li {
+  width: 250px;
+  display: inline-block;
+  line-height: 48px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.levelOne-li-actived {
+  opacity: 0.7;
+  background: #FFFFFF;
+  color: #333;
+}
+
+.levelTwo {
+  margin: 40px auto 42px;
+  text-align: center;
+  font-size: 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.levelTwo-ul {
+  display: none;
+}
+
+.levelTwo-li {
+  vertical-align: top;
+  font-size: 16px;
+  display: inline-block;
+  width: 250px;
+  height: 80px;
+  line-height: 76px;
+  padding: 12px 0 20px;
+  text-align: center;
+  position: relative;
+}
+
+.levelTwo-ul:nth-child(1) .levelTwo-li {
+  width: 200px;
+  height: 76px;
+}
+
+.levelTwo-ul:nth-child(1) .levelTwo-li-actived::after {
+  left: 90px;
+}
+
+.levelTwo-li .levelTwo-a {
+  line-height: 1.4;
+  vertical-align: center;
+}
+
+.levelTwo-li:not(:first-child)::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 2px;
+  height: 30px;
+  background: #D8D8D8;
+  border-radius: 1px;
+}
+
+.levelTwo-li.levelTwo-li-actived::before,
+.levelTwo-li-actived+.levelTwo-li::before {
+  width: 0px;
+}
+
+.levelTwo-li-actived {
+  background: #12B9FD;
+  color: #fff;
+  position: relative;
+}
+
+.levelTwo-li-active::before {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.levelTwo-li-actived::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 115px;
+  border-width: 8px;
+  border-style: solid;
+  border-radius: 0.5px;
+  border-color: #fff transparent transparent transparent;
+}
+.service-desc-li {
+  display: none;
+  font-family: PingFangSCRegular;
+  font-size: 16px;
+  color: #666666;
+}

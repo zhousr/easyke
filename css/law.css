@@ -1,0 +1,108 @@
+section {
+  padding: 40px 0;
+  background-color: #f2f2f2;
+}
+
+.lawDtl {
+  background-color: #fff;
+}
+
+.lawDtl-title {
+  font-size: 20px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.author {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.author li {
+  float: left;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.desc {
+  width: 1120px;
+  margin: 0 auto;
+  font-family: PingFangSCRegular;
+  font-size: 16px;
+  color: #666666;
+  text-indent: 20px;
+  padding-bottom: 40px;
+  min-height: 300px;
+}
+
+.nextArticle {
+  border-top: 1px solid #ccc;
+  padding: 40px;
+}
+
+.nextArticle li {
+  margin-bottom: 20px;
+}
+
+.nextArticle-back {
+  width: 120px;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+  margin-top: 12px;
+  background: #0095FF;
+  border-radius: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+.law-ul{
+  margin-top: 40px;
+}
+.law-li {
+  float: left;
+  padding: 40px;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+
+.law-li-imgBox,
+.law-li-img {
+  width: 300;
+  height: 220px;
+}
+
+.law-right {
+  width: 760px;
+}
+
+.law-li-title {
+  font-family: PingFangSCSemibold-;
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.law-li-desc {
+  width: 100%;
+  font-size: 16px;
+  color: #666;
+  /* display: inline-block; */
+  margin-bottom: 50px;
+}
+
+.law-li-time {
+  font-family: PingFangSCSemibold-;
+  font-size: 18px;
+  color: #0095FF;
+}
+
+.law-li-btn {
+  width: 120px;
+  text-align: center;
+  line-height: 40px;
+  background: #0095FF;
+  border-radius: 2px;
+  color: #fff;
+}
