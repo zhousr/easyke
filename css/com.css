@@ -1,3 +1,7 @@
+.bg {
+  background-color: #f0f0f0;
+}
+
 header {
   position: relative;
 }
@@ -216,18 +220,22 @@ section {
   .common {
     width: 100%;
   }
+
   .nav-bg {
     height: 60px;
     background-color: rgba(255, 255, 255, 0.5);
   }
+
   .nav-logo {
     padding-top: 5px;
   }
+
   .header-btn {
     display: inline-block;
     float: right;
     margin: 12px 20px 0 0;
   }
+
   .wapBox {
     position: fixed;
     right: -100vw;
@@ -237,17 +245,21 @@ section {
     transition: all .5s;
     overflow: hidden;
   }
+
   .wapBox.showNav {
     right: 0;
     width: 100vw;
   }
+
   .wapBox-exitImg {
     display: inline-block;
     margin: 12px 0 0 20px;
   }
+
   .nav-ul {
     margin-top: 20px;
   }
+
   .nav-li {
     box-sizing: content-box;
     display: block;
@@ -258,32 +270,40 @@ section {
     line-height: 41px;
     overflow: hidden;
   }
+
   .nav-li.heightAuto {
     height: auto;
     background-color: #007BD2;
   }
+
   .nav-li:hover .nav-li-img-top {
     display: none;
-  } 
+  }
+
   .nav-li:hover .nav-li-img-bottom {
     display: inline-block;
   }
+
   .nav-li:hover .nav-a::before {
     width: 0;
     color: inherit;
   }
+
   .nav-li:hover .nav-a {
     color: inherit;
   }
+
   .nav-li-img-bottom,
   .nav-li-img-top {
     float: right;
     margin: 15px 20px;
   }
+
   .nav-li-img-bottom {
     transform: rotate(-90deg);
     display: inline-block;
   }
+
   .nav-li .abs {
     position: relative;
     display: block;
@@ -291,48 +311,59 @@ section {
     left: -20px;
     top: 0;
   }
+
   .nav-li .abs-left {
     width: 100%;
     /* background-color: transparent; */
     padding: 0;
   }
+
   .nav-li-actived .nav-a::before {
     display: none;
   }
+
   .abs-left-actived {
     background: transparent;
     color: inherit;
   }
+
   .abs-left-actived .abs-title-a::after {
     content: '';
     height: 0;
     overflow: hidden;
   }
+
   .abs-left-title:hover {
     background-color: transparent;
     color: inherit;
   }
+
   .nav-li .abs-right {
     display: none;
   }
+
   .abs-left {
     width: 100%;
   }
+
   .com-footer {
     display: block;
     height: auto;
   }
+
   .footer-box {
     width: 100%;
     height: 100%;
     padding: 20px 0 10px 10px;
   }
-  .footer-right{
+
+  .footer-right {
     display: none;
   }
-  .footer-copyright{
+
+  .footer-copyright {
     width: 100%;
     margin: 0;
   }
-  
+
 }
